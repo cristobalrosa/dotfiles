@@ -1,0 +1,5 @@
+*.project
+*.pydevproject
+*.idea
+*.py[co]
+.DS_Store
