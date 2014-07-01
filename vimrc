@@ -28,7 +28,8 @@ Plugin 'majutsushi/tagbar'
 " autocomplete code
 " You need to compile YMC ~/.vim/bundle/YouCompleteMe [master]$ ./install.sh --clang-completer
 Plugin 'Valloric/YouCompleteMe'
-
+Plugin 'Lokaltog/powerline'
+Plugin 'fholgado/minibufexpl.vim'
 call vundle#end()
 filetype plugin indent on
 
@@ -44,7 +45,6 @@ set hlsearch
 set incsearch  "busqueda incremental
 set autoindent
 set textwidth=0
-set foldlevel=0
 set clipboard+=unnamed "Usar el clipboard para copiar y pegar
 set commentstring=\ #\ %s
 set ignorecase
@@ -55,12 +55,17 @@ set showcmd "mostar comando mientras lo escribres
 set expandtab "sustituye tabuladores por espacios
 set shiftwidth=4 "auto-indent.
 set softtabstop=4
-set foldenable "activamos el folding
 set number " show line numbers
 set history=1000
 set undolevels=1000
 set wildignore=*.swp,*.bak,*.pyc,*.class
 set title
+" Folding options
+set foldmethod=indent   "fold based on indent
+set foldnestmax=1       "deepest fold is 10 levels
+set nofoldenable        "dont fold by default
+set foldlevel=1         "this is just what i use
+
 "Special characters on.
 " Highligh tabs, trailing spaces
 set listchars=tab:>-,trail:-,eol:¶
@@ -72,8 +77,10 @@ set statusline="%f%m%r%h%w [%Y] [0x%02.2B]%< %F%=%4v,%4l %3p%% of %L"
 " NERD Tree shortcut
 map <C-n> :NERDTreeToggle<CR>
 " Fancy simbols en status line - airline
-let g:airline_powerline_fonts=1
+" let g:airline_powerline_fonts=1
 let g:airline_theme="base16"
 nmap <C-t> :TagbarToggle<CR>
 " Tagbar on the left
 let g:tagbar_left = 1
+let g:syntastic_python_checker_args='--ignore=E501'
+
