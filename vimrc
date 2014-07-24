@@ -65,6 +65,11 @@ set foldmethod=indent   "fold based on indent
 set foldnestmax=1       "deepest fold is 10 levels
 set nofoldenable        "dont fold by default
 set foldlevel=1         "this is just what i use
+" Show status line
+set laststatus=2
+" Use 256 colours 
+set t_Co=256
+set rtp+=$HOME/.local/lib/python2.7/site-packages/powerline/bindings/vim/
 
 "Special characters on.
 " Highligh tabs, trailing spaces
@@ -77,7 +82,7 @@ set statusline="%f%m%r%h%w [%Y] [0x%02.2B]%< %F%=%4v,%4l %3p%% of %L"
 " NERD Tree shortcut
 map <C-n> :NERDTreeToggle<CR>
 " Fancy simbols en status line - airline
-" let g:airline_powerline_fonts=1
+let g:airline_powerline_fonts=1
 let g:airline_theme="base16"
 nmap <C-t> :TagbarToggle<CR>
 " Tagbar on the left
