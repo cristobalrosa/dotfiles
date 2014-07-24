@@ -97,6 +97,7 @@ alias j='jobs -l'
 alias df='df -H'
 alias du='du -ch'
 alias -- -='cd ..'
+alias say='echo "$1" | espeak -s 120 2>/dev/null'
 #alias l='ls -CF'
 
 # Alias definitions.
