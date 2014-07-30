@@ -30,6 +30,8 @@ Plugin 'majutsushi/tagbar'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'Lokaltog/powerline'
 Plugin 'fholgado/minibufexpl.vim'
+" Arduino syntax highlight
+Plugin 'sudar/vim-arduino-syntax'
 call vundle#end()
 filetype plugin indent on
 
