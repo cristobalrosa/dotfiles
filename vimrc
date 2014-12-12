@@ -32,6 +32,7 @@ Plugin 'Lokaltog/powerline'
 Plugin 'fholgado/minibufexpl.vim'
 " Arduino syntax highlight
 Plugin 'sudar/vim-arduino-syntax'
+Plugin 'jceb/vim-orgmode'
 call vundle#end()
 filetype plugin indent on
 
@@ -90,4 +91,10 @@ nmap <C-t> :TagbarToggle<CR>
 " Tagbar on the left
 let g:tagbar_left = 1
 let g:syntastic_python_checker_args='--ignore=E501'
+"YouCompleteMe global config
+let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/ymc_extra_conf.py'
+"YCM Preview active
+let g:ycm_add_preview_to_completeopt = 1
+"YCM Preview autoclose
+let g:ycm_autoclose_preview_window_after_completion = 1
 
