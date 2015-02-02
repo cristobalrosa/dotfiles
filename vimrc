@@ -33,6 +33,8 @@ Plugin 'fholgado/minibufexpl.vim'
 " Arduino syntax highlight
 Plugin 'sudar/vim-arduino-syntax'
 Plugin 'jceb/vim-orgmode'
+" Scala syntax highlight
+Plugin 'derekwyatt/vim-scala'
 call vundle#end()
 filetype plugin indent on
 
