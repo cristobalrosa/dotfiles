@@ -98,6 +98,8 @@ alias df='df -H'
 alias du='du -ch'
 alias -- -='cd ..'
 alias say='echo "$1" | espeak -s 120 2>/dev/null'
+alias sshmac='ssh mac -l crosa'
+alias sshusm='ssh usm -l root'
 #alias l='ls -CF'
 
 # Alias definitions.
@@ -119,3 +121,8 @@ fi
 export PATH=$HOME/bin/todo.txt_cli-2.9/:$PATH
 export PATH=$HOME/bin/pycharm/bin/:$PATH
 export TODOTXT_DEFAULT_ACTION=ls
+export GMOCK_HOME=$HOME/bin/gmock-1.7.0/
+export MSF_DATABASE_CONFIG=/usr/local/share/metasploit-framework/config/database.yml
+export SCALA_HOME=/usr/local/src/scala/scala-2.11.5
+export PATH=$SCALA_HOME/bin:$PATH
+export PATH=$HOME/bin/packer/packer_0.7.5:$PATH
