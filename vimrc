@@ -35,6 +35,9 @@ Plugin 'sudar/vim-arduino-syntax'
 Plugin 'jceb/vim-orgmode'
 " Scala syntax highlight
 Plugin 'derekwyatt/vim-scala'
+
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
 call vundle#end()
 filetype plugin indent on
 
